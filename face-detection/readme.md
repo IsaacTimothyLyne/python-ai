@@ -24,3 +24,6 @@ All reference images given to the AI to learn by will be in black and white sinc
 Behind the scenes: 
 - Haar Cascade is an algorithm, (Haar is the inventor, Cascade is the algorithm type)
 - https://medium.com/analytics-vidhya/haar-cascades-explained-38210e57970d
+- Haar Features are applied to an image.
+- https://youtu.be/XIrOM9oP3pA?t=5957
+- 
