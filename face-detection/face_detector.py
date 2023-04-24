@@ -44,7 +44,7 @@ class WebcamFaceDetector:
             raise RuntimeError('Error getting a frame from the webcam, there may not be a webcam available')
         coordinates = self.face_detector.detect_faces(frame)
         self.face_drawer.draw(frame, coordinates)
-        cv2.imshow('window name', frame)
+        cv2.imshow('Face Detector', frame)
 
     def run(self):
         while True:
