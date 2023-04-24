@@ -8,7 +8,8 @@ class FaceDetector:
 
     def detect_faces(self, img):
         gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        return self.trained_face_data.detectMultiScale(gray_img)
+        # adjust sensitivy with the final Arg (50 is good for me) \/
+        return self.trained_face_data.detectMultiScale(gray_img, 1.0485258, 50)
 
 class FaceDrawer:
     def __init__(self, shape='rect'):
