@@ -38,3 +38,17 @@ for filename in os.listdir(pos_dir):
             # Save the positive sample to the output directory
             sample_filename = os.path.splitext(filename)[0] + '_sample{}.jpg'.format(i)
             cv2.imwrite(os.path.join(pos_out_dir, sample_filename), sample)
+
+
+# Create a positive samples file by specifying the location of each positive 
+# image and the coordinates of the object of interest in each image. 
+# You can use the OpenCV annotation tool called "opencv_annotation" to create this file.
+
+#Create a negative samples file by specifying the location of each negative image. 
+# You can use the OpenCV utility called "opencv_createsamples" to create this file.
+
+# Train the Haar Cascade classifier using the "opencv_traincascade" tool. This tool takes as input the positive and negative
+# samples files and several other parameters, such as the number of stages,
+# the number of positive and negative samples, and the size of the Haar features.
+
+# Evaluate the performance of the trained classifier using a test set of images.
